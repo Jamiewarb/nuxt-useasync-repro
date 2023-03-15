@@ -5,7 +5,12 @@
 </template>
 
 <script setup lang="ts">
-import { useTestWorks } from '~/composables/useTest';
+import { useTestDoesntWork } from '~/composables/useTest';
 
-await useTestWorks();
+await useTestDoesntWork();
+// await useTestWorks();
+
+/* Putting the non-working function directly into the script tag allows it to work again. */
+// await fn();
+// await useAsyncData(async () => {});
 </script>
